@@ -1,0 +1,101 @@
+Dokumentacja API projektu PPKWU_Laboratorium2:
+
+
+-------------------------------------------
+Metoda GET
+
+URL
+http://localhost:8080/api/string/uppercase-characters-count/{word}
+
+Parametr:
+word - typ String
+
+Odpowiedź:
+Liczba dużych liter w podanym paramaterze word
+
+
+Przykład żądania:
+http://localhost:8080/api/string/uppercase-characters-count/aaaDDD111
+
+Odpowiedź:
+3
+
+-------------------------------------------
+
+Metoda GET
+
+URL
+http://localhost:8080/api/string/lowercase-characters-count/{word}
+
+Parametr:
+word - typ String
+
+Odpowiedź:
+Liczba małych liter w podanym paramaterze word
+
+
+Przykład żądania:
+http://localhost:8080/api/string/lowercase-characters-count/aaaaDDD111
+
+Odpowiedź:
+4
+
+-------------------------------------------
+
+Metoda GET
+
+URL
+http://localhost:8080/api/string/digits-count/{word}
+
+Parametr:
+word - typ String
+
+Odpowiedź:
+Liczba cyfr w podanym paramaterze word
+
+
+Przykład żądania:
+http://localhost:8080/api/string/digits-count/aaaaDDD06789
+
+Odpowiedź:
+5
+
+-------------------------------------------
+
+Metoda GET
+
+URL
+http://localhost:8080/api/string/special-characters-count/{word}
+
+Parametr:
+word - typ String
+
+Odpowiedź:
+Liczba znaków specjalnych w paramaterze word
+
+
+Przykład żądania:
+http://localhost:8080/api/string/special-characters-count/asd*@6
+
+Odpowiedź:
+2
+
+-------------------------------------------
+
+Metoda GET
+
+URL
+http://localhost:8080/api/string/information/{word}
+
+Parametr:
+word - typ String
+
+Odpowiedź:
+Informacja o liczbie znaków z danej kategorii (cyfry, małe litery, duże litery, znaki specjalne)
+
+
+Przykład żądania:
+http://localhost:8080/api/string/information/asd*@6
+
+Odpowiedź:
+Digits count: 1, lowercase letters count: 3, uppercase letters count: 0, special signs count: 2
